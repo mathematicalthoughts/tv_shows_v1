@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/shows_new_style.css' %}">
+    <title>Create</title>
+</head>
+<body>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h2>Add a New Show</h2>
+        <div class="fieldsContainer">
+            <div class="titleField">
+                <label for="formGroupExampleInput" class="form-label">Title</label>
+                <input type="text" name="title" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+            </div>
+            <div class="networkField">
+                <label for="formGroupExampleInput2" class="form-label">Network</label>
+                <input type="text" name="network" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+            </div>
+            <div class="dateField">
+                <label for="" class="form-label">Released Date</label>
+                <input type="date" name="released_date" class="form-control">
+            </div>
+            <div class="descField">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button id="btn-create">Create!</button>
+        </div>
+    </form>    
+</body>
+</html>

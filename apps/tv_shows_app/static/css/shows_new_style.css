@@ -1,0 +1,37 @@
+.fieldsContainer {
+    width: 666px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-left: 33px;
+    padding-left: 33px;
+    margin-top: 10px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+h2 {
+    margin-left: 33px;
+}
+.titleField {
+    width: 555px;
+    display: inline-block;
+}
+.networkField {
+    width: 333px;
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 33px;
+}
+.dateField {
+    width: 218px;
+    display: inline-block;
+}
+.descField {
+    width: 555px;
+    display: inline-block;
+    padding-top: 30px;
+}
+#btn-create {
+    border-radius: 5px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
